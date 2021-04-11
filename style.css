@@ -3,3 +3,47 @@ body {
   height: 100%;
   margin: 0;
 }
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  /* top and bottom margins are 0. auto makes it RELATIVE. the browser sets the margin. */
+}
+
+nav {
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.75em;
+  /* em makes it RELATIVE. if default is 16, now it is 12 */
+}
+
+nav a {
+  padding: 0 10px;
+  background-color: grey;
+  margin: 0 auto;
+  /* if you don't separate them:
+  /* no nav, only nav a: the nav a text is stuck on the left, even if you textalign/margin 0
+  /* no nav a, only nav: the grey bar covers the entire screen horizontally */
+}
+
+#featured-property p {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  /* basically margin 0 auto is magic */
+}
+
+#details div { /* without specifying div, they hang to the left. #details doesn't seem to matter, so it could just be div in this case */
+  float: left;
+  display: block;
+  background-color: red;
+  width: 25%;
+  text-align: center; 
+}
